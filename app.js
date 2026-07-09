@@ -41,6 +41,7 @@ document.getElementById("formViaje").addEventListener("submit",function(e){
     const fecha=document.getElementById("vFecha").value;
     const espacio=document.getElementById("vEspacio").value;
     const telefono=document.getElementById("vWhatsapp").value;
+    const email=document.getElementById("vEmail").value;
 
     const mensaje=
 `Hola.
@@ -55,7 +56,9 @@ Quiero ganar dinero con mi viaje.
 
 📦 Espacio disponible: ${espacio}
 
-📱 Mi WhatsApp: ${telefono}`;
+📱 Mi WhatsApp: ${telefono}`
+        
+📧 Correo: ${email};
 
     const url="https://wa.me/56943423780?text="+encodeURIComponent(mensaje);
 
