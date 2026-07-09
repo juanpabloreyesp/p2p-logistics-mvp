@@ -56,9 +56,9 @@ Quiero ganar dinero con mi viaje.
 
 📦 Espacio disponible: ${espacio}
 
-📱 Mi WhatsApp: ${telefono}`
+📱 Mi WhatsApp: ${telefono}
         
-📧 Correo: ${email};
+📧 Correo: ${email}`;
 
     const url="https://wa.me/56943423780?text="+encodeURIComponent(mensaje);
 
@@ -80,6 +80,8 @@ document.getElementById("formEnvio").addEventListener("submit",function(e){
     const objeto=document.getElementById("eObjeto").value;
     const fecha=document.getElementById("eFecha").value;
     const telefono=document.getElementById("eWhatsapp").value;
+    const email=document.getElementById("eEmail").value;
+    
 
     const mensaje=
 `Hola.
@@ -94,7 +96,9 @@ Necesito enviar algo.
 
 📅 Fecha: ${fecha}
 
-📱 Mi WhatsApp: ${telefono}`;
+📱 Mi WhatsApp: ${telefono}
+
+📧 Correo: ${email}`;
 
     const url="https://wa.me/56943423780?text="+encodeURIComponent(mensaje);
 
