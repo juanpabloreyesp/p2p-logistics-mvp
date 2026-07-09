@@ -159,5 +159,11 @@ h1{
 .buttons a{
     width:100%;
 }
+.oculto{
+    display:none;
+}
 
+form{
+    margin-top:40px;
+}
 }
