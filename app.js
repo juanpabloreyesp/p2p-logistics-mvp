@@ -1,1 +1,1 @@
-
+console.log("MVP iniciado 🚀");
