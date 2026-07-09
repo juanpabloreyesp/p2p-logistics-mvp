@@ -6,195 +6,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Monetiza tus viajes | MVP</title>
+    <title>Gana dinero con tu viaje</title>
 
     <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- HERO -->
+<header>
 
-    <header>
+<div class="container">
 
-        <div class="container">
+<span class="badge">
 
-            <h1>
-                Gana dinero con un viaje que ya ibas a hacer.
-            </h1>
+🚀 Programa Piloto · Chile
 
-            <p class="subtitle">
+</span>
 
-                Lleva una encomienda durante tu trayecto y recibe un pago por hacerlo.
+<h1>
 
-            </p>
+Envía lo que quieras y gana dinero con un viaje que vas a hacer.
 
-            <div class="buttons">
+</h1>
 
-                <button class="primary" onclick="mostrarFormulario('viaje')">
+<p class="subtitle">
 
-                    🚗 Quiero ganar dinero con mi viaje
+Si ya vas a viajar, aprovecha ese trayecto para llevar una encomienda y recibir un pago por hacerlo.
 
-                </button>
+</p>
 
-                <button class="secondary" onclick="mostrarFormulario('envio')">
+<div class="hero-buttons">
 
-                    📦 Necesito enviar algo
+<button class="btn btn-primary" onclick="mostrarFormulario('viaje')">
 
-                </button>
+🚗 Quiero ganar dinero con mi viaje
 
-            </div>
+</button>
 
-            <p class="small">
+<button class="btn btn-secondary" onclick="mostrarFormulario('envio')">
 
-                Programa piloto · Sin costo por participar
+📦 Necesito enviar algo
 
-            </p>
+</button>
 
-        </div>
+</div>
 
-    </header>
+<div class="hero-note">
 
-    <!-- COMO FUNCIONA -->
+Sin costo por participar · Estamos buscando los primeros usuarios.
 
-    <section>
+</div>
 
-        <div class="container">
+</div>
 
-            <h2>Solo tres pasos.</h2>
+</header>
 
-            <div class="cards">
+<section class="how">
 
-                <div class="card">
+<div class="container">
 
-                    <h3>1. Publica</h3>
+<h2>
 
-                    <p>
+¿Cómo funciona?
 
-                        Publica tu viaje o tu solicitud en menos de un minuto.
+</h2>
 
-                    </p>
+<div class="grid">
 
-                </div>
+<div class="card">
 
-                <div class="card">
+<div class="icon">🚗</div>
 
-                    <h3>2. Conectamos</h3>
+<h3>Publica tu viaje</h3>
 
-                    <p>
+<p>
 
-                        Buscamos la mejor coincidencia para tu viaje.
+Indica origen, destino y fecha.
 
-                    </p>
+</p>
 
-                </div>
+</div>
 
-                <div class="card">
+<div class="card">
 
-                    <h3>3. Entrega</h3>
+<div class="icon">🤝</div>
 
-                    <p>
+<h3>Te conectamos</h3>
 
-                        Coordinan la entrega y el pago se libera cuando todo está OK.
+<p>
 
-                    </p>
+Buscamos personas que necesitan mover algo en esa misma ruta.
 
-                </div>
+</p>
 
-            </div>
+</div>
 
-        </div>
+<div class="card">
 
-    </section>
+<div class="icon">💰</div>
 
-    <!-- FORMULARIO VIAJE -->
+<h3>Recibe un pago</h3>
 
-    <section id="viajar" class="oculto">
+<p>
 
-        <div class="container">
+Entregas la encomienda y recibes tu dinero.
 
-            <h2>🚗 Publicar un viaje</h2>
+</p>
 
-            <form id="formViaje">
+</div>
 
-                <input id="v_origen" placeholder="Origen">
+</div>
 
-                <input id="v_destino" placeholder="Destino">
+</div>
 
-                <input id="v_fecha" type="date">
+</section>
 
-                <input id="v_espacio" placeholder="Espacio disponible">
+<section id="viajar" class="form-section oculto">
 
-                <input id="v_whatsapp" placeholder="Tu WhatsApp">
+<div class="container">
 
-                <button type="submit">
+<h2>
 
-                    Continuar por WhatsApp
+🚗 Publicar un viaje
 
-                </button>
+</h2>
 
-            </form>
+<form id="formViaje">
 
-        </div>
+<input id="vOrigen" placeholder="Origen">
 
-    </section>
+<input id="vDestino" placeholder="Destino">
 
-    <!-- FORMULARIO ENVIO -->
+<input id="vFecha" type="date">
 
-    <section id="enviar" class="oculto">
+<input id="vEspacio" placeholder="Espacio disponible">
 
-        <div class="container">
+<input id="vWhatsapp" placeholder="Tu WhatsApp">
 
-            <h2>📦 Publicar una misión</h2>
+<button type="submit" class="btn btn-primary">
 
-            <form id="formEnvio">
+Continuar por WhatsApp
 
-                <input id="e_origen" placeholder="Origen">
+</button>
 
-                <input id="e_destino" placeholder="Destino">
+</form>
 
-                <input id="e_objeto" placeholder="¿Qué necesitas enviar?">
+</div>
 
-                <input id="e_fecha" type="date">
+</section>
 
-                <input id="e_whatsapp" placeholder="Tu WhatsApp">
+<section id="envio" class="form-section oculto">
 
-                <button type="submit">
+<div class="container">
 
-                    Continuar por WhatsApp
+<h2>
 
-                </button>
+📦 Publicar una encomienda
 
-            </form>
+</h2>
 
-        </div>
+<form id="formEnvio">
 
-    </section>
+<input id="eOrigen" placeholder="Origen">
 
-    <!-- FOOTER -->
+<input id="eDestino" placeholder="Destino">
 
-    <footer>
+<input id="eObjeto" placeholder="¿Qué necesitas enviar?">
 
-        <div class="container">
+<input id="eFecha" type="date">
 
-            <p>
+<input id="eWhatsapp" placeholder="Tu WhatsApp">
 
-                Estamos construyendo la primera red logística descentralizada de Chile.
+<button type="submit" class="btn btn-primary">
 
-            </p>
+Continuar por WhatsApp
 
-        </div>
+</button>
 
-    </footer>
+</form>
 
-    <script src="app.js"></script>
+</div>
+
+</section>
+
+<section class="trust">
+
+<div class="container">
+
+<h2>
+
+¿Por qué usar esta red?
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>🚗 Viajes existentes</h3>
+
+<p>
+
+No generamos nuevos recorridos.
+
+Aprovechamos los que ya ocurren.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🛡️ Confianza</h3>
+
+<p>
+
+Solo conectamos personas.
+
+La plataforma coordina.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⚡ Más rápido</h3>
+
+<p>
+
+Sin centros de distribución ni bodegas.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<p>
+
+Estamos construyendo la primera red logística descentralizada de Chile 🇨🇱
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="app.js"></script>
 
 </body>
 
